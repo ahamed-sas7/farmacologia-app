@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Prontuario di Farmacologia</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#12343B">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <h1>Prontuario<span>di Farmacologia</span></h1>
+  <p class="offline-badge" id="offlineBadge">In linea</p>
+</header>
+
+<main>
+  <div class="controls">
+    <input type="search" id="searchInput" placeholder="Cerca un farmaco o un principio attivo…" autocomplete="off">
+    <div class="chips" id="categoryChips"></div>
+  </div>
+
+  <p class="count" id="resultCount"></p>
+
+  <ul class="drug-list" id="drugList"></ul>
+</main>
+
+<div class="detail-overlay" id="detailOverlay">
+  <div class="detail-card" id="detailCard"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
